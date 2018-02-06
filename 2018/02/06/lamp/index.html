@@ -174,7 +174,11 @@ Centos6编译安装实现LAMP">
 </li>
 <li>在浏览器登陆<a href="http://127.0.0.1/pma" target="_blank" rel="noopener">http://127.0.0.1/pma</a> 即可查看管理数据库</li>
 </ol>
-<h2 id="默认是管理本机数据库的"><a href="#默认是管理本机数据库的" class="headerlink" title="* 默认是管理本机数据库的"></a>* 默认是管理本机数据库的</h2><h4 id="WordPress"><a href="#WordPress" class="headerlink" title="WordPress"></a>WordPress</h4><blockquote>
+<ul>
+<li>默认是管理本机数据库的</li>
+</ul>
+<hr>
+<h4 id="WordPress"><a href="#WordPress" class="headerlink" title="WordPress"></a>WordPress</h4><blockquote>
 <p>WordPress是一种使用PHP语言开发的博客平台，用户可以在支持PHP和MySQL数据库的服务器上架设属于自己的网站。也可把 WordPress当作一个内容管理系统（CMS）来使用</p>
 </blockquote>
 <p>实现WordPress也需要数据库</p>
@@ -238,10 +242,10 @@ Centos6编译安装实现LAMP">
 <li><p>修改php配置文件</p>
 </li>
 <li>创建php-fpm启动项</li>
-<li>修改httpd配置使支持fcgi<br>vim /etc/httpd/conf/httpd.conf</li>
+<li><p>修改httpd配置使支持fcgi<br>vim /etc/httpd/conf/httpd.conf</p>
+<p>配置httpd支持php<br>vim /app/httpd24/conf/httpd.conf<br>取消下面两行的注释<br>LoadModule proxy_module modules/mod_proxy.so<br>LoadModule proxy_fcgi_module modules/mod_proxy_fcgi.so<br>修改下面行<br><ifmodule dir_module=""><br>DirectoryIndex index.php index.html<br></ifmodule><br>加下面四行<br>AddType application/x-httpd-php .php<br>AddType application/x-httpd-php-source .phps<br>ProxyRequests Off<br>ProxyPassMatch ^/(.*.php)$ fcgi://127.0.0.1:9000/app/httpd24/htdocs/$1</p>
+</li>
 </ol>
-<p>配置httpd支持php<br>vim /app/httpd24/conf/httpd.conf<br>取消下面两行的注释<br>LoadModule proxy_module modules/mod_proxy.so<br>LoadModule proxy_fcgi_module modules/mod_proxy_fcgi.so<br>修改下面行</p>
-<p><ifmodule dir_module=""><br>DirectoryIndex index.php index.html<br></ifmodule><br>加下面四行<br>AddType application/x-httpd-php .php<br>AddType application/x-httpd-php-source .phps<br>ProxyRequests Off<br>ProxyPassMatch ^/(.*.php)$ fcgi://127.0.0.1:9000/app/httpd24/htdocs/$1</p>
 <hr>
 <h3 id="注"><a href="#注" class="headerlink" title="注"></a>注</h3><blockquote>
 <ul>
