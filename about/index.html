@@ -1,238 +1,114 @@
 <!DOCTYPE html>
-<html class="full-height">
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="//cdn.bootcss.com/bulma/0.4.1/css/bulma.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-  
-  <title>Devaron</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="title: aboutdate: 2017-05-31 10:05:56 layout: about 是的，这里并没有你想看到的相关信息！ 让你失望了！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Devaron">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
-<meta property="og:site_name" content="Devaron">
-<meta property="og:description" content="title: aboutdate: 2017-05-31 10:05:56 layout: about 是的，这里并没有你想看到的相关信息！ 让你失望了！">
-<meta property="og:updated_time" content="2018-02-06T11:39:59.310Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Devaron">
-<meta name="twitter:description" content="title: aboutdate: 2017-05-31 10:05:56 layout: about 是的，这里并没有你想看到的相关信息！ 让你失望了！">
-  
-    <link rel="alternate" href="/atom.xml" title="Devaron" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/common.css">
-<link rel="stylesheet" href="/css/nav.css">
-<link rel="stylesheet" href="/css/layout.css">
-  
+<html lang="zh-Hans">
 
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="title: aboutdate: 2017-05-31 10:05:56
+layout: about 是的，这里并没有你想看到的相关信息！ 让你失望了！">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Aaron">
+    
+
+    <!-- Title -->
+    
+    <title>Devaron</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Noto+Serif:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
-  <header id="navbar" class="overflow-hidden">
-  <div class="container">
-    <nav class="nav">
-         <div class="nav-left">
-            <a href="/" class="nav-item" style="font-size: 20px;">
-              <span class="logo">Devaron</span>'s Blog
-            </a>
-         </div>
-        <div class="nav-center is-hidden position-relative" id="search_container">
-            <div class="nav-item full-width full-height">
-                <i class="fa fa-search has-padding" aria-hidden="true"></i>
-                <input type="text" id="search_input" class="search-input full-height full-width" placeholder="Search post" autofocus>
-                <i id="close_search" class="fa fa-times" aria-hidden="true"></i>
-            </div>
-            <div id="search_result"></div>
-        </div>
-        <div class="nav-right nav-menu">
-            <a class="nav-item" id="search">
-                <i class="fa fa-search" aria-hidden="true"></i>
-            </a>
-            
-            <a class="nav-item" href="/">
-                Home
-            </a>
-            
-            <a class="nav-item" href="/works">
-                目录
-            </a>
-            
-            <a class="nav-item" href="/about">
-                关于
-            </a>
-            
-        </div>
-        <span class="nav-toggle" id="navMenuDropdown">
-            <span></span>
-            <span></span>
-            <span></span>
-        </span>
-        <div class="navbar-menu position-absolute full-width content-box is-hidden-desktop is-flex flex-column center" style="top: 100%;">
-            
-            <a class="nav-item flex-1" href="/">
-                Home
-            </a>
-            
-            <a class="nav-item flex-1" href="/works">
-                目录
-            </a>
-            
-            <a class="nav-item flex-1" href="/about">
-                关于
-            </a>
-            
-        </div>
-    </nav>
-  </div>
-</header>
 
-  <div id="main-wrap" class="position-relative" style="margin-top: 55px;">
-      <div class="main-inner-content">
-          <!--翻页-->
-<style>
-    .header-box {
-        height: 370px;
-        filter: blur(10px);
-        background-size: cover;
-        background-color: lightsteelblue;
-    }
+    <!-- Content -->
+    <section class="article-container">
+<!-- Back Home -->
+<a class="nav-back" href="/">
+    <i class="fa fa-puzzle-piece"></i>
+</a>
 
-    .post-box {
-        padding: 15px;
-        padding-top: 60px;
-        min-height: 80vh;
-        margin-top: -200px;
-        border-radius: 4px;
-        background-color: rgba(255,255,255,.8);
-    }
-
-    .post-avatar {
-        height: 30px;
-        width: 30px;
-        border-radius: 50%;
-    }
-
-    .flow-chart {
-        text-align: center;
-    }
-
-    img[alt="post-cover"] {
-        display: none;
-    }
-</style>
-<header>
-    <div id="header_box" class="header-box"></div>
-</header>
-<section>
-    <div class="container post-box">
-        <div class="content post-title is-flex center flex-column" style="margin-bottom: 70px; overflow: auto;">
-            <h1 class="has-text-centered" style="padding-bottom: 10px; border-bottom: 3px solid #fff">
-                <strong>Null</strong>
-            </h1>
-            
-            <div class="is-flex align-center">
-                <img class="post-avatar" src="https://cdn2.iconfinder.com/data/icons/rcons-user/32/male-shadow-circle-512.png">
-                <span style="padding:0 10px;"> <span class="sub-title">By</span> Devaron</span>
-                <span class="post-date sub-title">at: 2018-02-06</span>
-            </div>
-            
-        </div>
-        <div class="content" style="overflow: auto">
-            <p>title: about<br>date: 2017-05-31 10:05:56</p>
-<h2 id="layout-about"><a href="#layout-about" class="headerlink" title="layout: about"></a>layout: about</h2><h2 id="是的，这里并没有你想看到的相关信息！"><a href="#是的，这里并没有你想看到的相关信息！" class="headerlink" title=" 是的，这里并没有你想看到的相关信息！"></a><center> 是的，这里并没有你想看到的相关信息！</center></h2><h2 id="让你失望了！"><a href="#让你失望了！" class="headerlink" title=" 让你失望了！"></a><center> 让你失望了！</center></h2>
-        </div>
-        <div class="post-reply">
-            
-                <!-- 来必力City版安装代码 -->
-                <div id="lv-container" data-id="city" data-uid="MTAyMC8zMzk1MC8xMDQ4NQ">
-                    <script type="text/javascript">
-                        (function(d, s) {
-                            var j, e = d.getElementsByTagName(s)[0];
-
-                            if (typeof LivereTower === 'function') { return; }
-
-                            j = d.createElement(s);
-                            j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-                            j.async = true;
-
-                            e.parentNode.insertBefore(j, e);
-                        })(document, 'script');
-                    </script>
-                    <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+<!-- Page Header -->
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Halo</h1>
                 </div>
-                <!-- City版安装代码已完成 -->
-            
-            
-            <div id="disqus_thread" style="width: 80%; margin: 0 auto;"></div>
-                <script>
-
-                    /**
-                     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-                    /*
-                     var disqus_config = function () {
-                     this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-                     this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                     };
-                     */
-                    (function() { // DON'T EDIT BELOW THIS LINE
-                        var d = document, s = d.createElement('script');
-                        s.src = 'https://haojen.disqus.com/embed.js';
-                        s.setAttribute('data-timestamp', +new Date());
-                        (d.head || d.body).appendChild(s);
-                    })();
-                </script>
-                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-            
+            </div>
         </div>
     </div>
-</section>
-<script>
-    // 获取第一张图, 用以当封面背景图
-    var img = document.querySelectorAll('img')[1]
+</header>
 
-    if (img) {
-        var header_box = document.querySelector('#header_box')
-        header_box.style.backgroundImage = 'url('+ img.src +')'
-    }
-</script>
-      </div>
-  </div>
-  <style>
-  #footer {
-    min-height: 10vh;
-    background: black;
-    color: #fff;
-  }
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Main Content -->
+            <div class="post-content col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p>title: about<br>date: 2017-05-31 10:05:56</p>
+<h2 id="layout-about"><a href="#layout-about" class="headerlink" title="layout: about"></a>layout: about</h2><h2 id="是的，这里并没有你想看到的相关信息！"><a href="#是的，这里并没有你想看到的相关信息！" class="headerlink" title=" 是的，这里并没有你想看到的相关信息！"></a><center> 是的，这里并没有你想看到的相关信息！</center></h2><h2 id="让你失望了！"><a href="#让你失望了！" class="headerlink" title=" 让你失望了！"></a><center> 让你失望了！</center></h2>
+ 
+                <!-- Meta -->
+                <div class="post-meta">
+                    <hr>
+                    <br>
+                    <div class="post-tags">
+                        
+                    </div>
+                    <div class="post-date">
+                        2018 年 02 月 06 日
+                    </div>
+                </div>
+            </div>
 
-  #footer a {
-    color: #e1e1e1;
-  }
-</style>
-<footer id="footer" class="has-text-centered is-flex center">
-  <div class="container has-padding">
-    <div>
-      <div>
-        <!--请您保留作者署名, 主题制作来之不易-->
-        Theme by <a href="http://haojen.github.io/">Haojen Ma</a>
-        <br>
-        Copyright © Aaron 2018
-        <br>
-        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-      </div>
+            <!-- Comments -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <!-- Disqus Comments -->
+
+
+            </div>
+        </div>
     </div>
-  </div>
-</footer>
+</article>
+</section>
 
-<script src="/js/search_core.js"></script>
-<script src="/js/script.js"></script>
+    <!-- Scripts -->
+    <!-- jQuery -->
+<script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+	console.log('Hexo-theme-hollow designed by zchen9 🙋 © 2015-' + (new Date()).getFullYear());
+</script>
+
+    <!-- Google Analytics -->
+    
 
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -250,4 +126,5 @@
 </script>
 <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
+
 </html>
